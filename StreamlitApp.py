@@ -37,7 +37,7 @@ def main():
             with st.spinner("Processing..."):
                 documents = load_data(upload_dir)  # Load the documents from the specified directory
                 model = load_model()
-                query_engine = download_gemini_embedding("AIzaSyBHrK333hcGb6lERHDm3aieshj_9oBVJJM", documents)
+                query_engine = download_gemini_embedding("your_gemini_api_key", documents)
                 
                 response = query_engine.query(user_question)
                 
